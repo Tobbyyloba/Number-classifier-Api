@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-dg-851pxd5%w(9x@&r5jnu#n@wgzzf8y#ol(2q!s%3llmlaqjp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["number-classifier-api-production-be13.up.railway.app"]
+ALLOWED_HOSTS = ["number-classifier-api-lv21.onrender.com"]
 
 
 
