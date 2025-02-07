@@ -59,7 +59,7 @@ class ClassifyNumberView(APIView):
 
     def is_armstrong(self, num):
         """Check if a number is an Armstrong number."""
-        num_str = str(num)
+        num_str = str(abs(num))
         num_length = len(num_str)
         return num == sum(int(digit) ** num_length for digit in num_str)
 
