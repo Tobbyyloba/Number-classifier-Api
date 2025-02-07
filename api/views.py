@@ -11,12 +11,12 @@ class ClassifyNumberView(APIView):
         number_params = request.GET.get('number')
 
         if not number_params:
-            return Response({"error": "Please provide a number in the query parameters."}, status=400)
+            return Response({"error": True}, status=400)
 
         try:
             number = int(number_params)
         except ValueError:
-            return Response({"error": "Invalid number format. Please enter an integer."}, status=400)
+            return Response({"error": True}, status=400)
 
         # Compute properties
         is_prime = self.is_prime(number)
